@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage</title>
+	<meta charset="utf-8">
+	<link href="../estilos_nuevo.css" rel="stylesheet">
+  <link href="../iconos.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../flexbox.css">
+  <link rel="stylesheet" type="text/css" href="../menu_css.css">
+ 
+  <script src="../js/remera.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+</head>
+
+	
+<body>
+  
+
+<header>
+
+
+<nav class="navbar">
+
+  <div id="hamburguesa" class="menu_hamb">
+      <a><div class="icon-menu"></div></a>
+  </div>
+
+  <div id="botonera" class="navbar_botones">
+
+ 
+  
+
+  </div>
+
+</nav>
+
+
+<div id="titulo">
+	<p> Bon Odori Sarmiento</p>
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+<section>
+
+<h1>Recordatorio de Tareas para Bon Odori:</h1>
+
+
+
+<div id="titulo_tareas"></div>
+
+<table id="tareas">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Descripción</td>
+      <td>Nivel de urgencia</td>
+      <td>Fecha</td>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<hr>
+<div id="formcito">
+  <h2>Agregar tarea</h2>
+  <label>ID de tarea</label>
+  <input name="formcito_campo" type="number" readonly disabled>
+  <label>Descripción de la tarea</label>
+  <input name="formcito_campo" type="text">
+  
+  <label>Urgencia</label>
+  <select name="formcito_campo">
+    <option value="Muy urgente">Muy urgente</option>
+    <option value="Urgente">Urgente</option>
+    <option value="Poco urgente">Poco urgente</option>
+  </select>
+  <label>Fecha</label>
+  <input name="formcito_campo" type="date">
+
+  <button onclick="agregar()"> Agregar </button>
+  <button onclick="eliminar_storage()"> Reiniciar</button>
+</div>
+<div>
+  <h2>Eliminar</h2>
+    <label>Id a eliminar</label>
+      <select id="option_eliminar">
+
+      </select>
+      <button onclick="eliminar_registro();">Eliminar tarea</button>
+      
+</div>
+
+</section>
+
+
+	<footer>
+		<div id="texto_pie">
+			<p> Consultas: ajs@gmail.com</p>
+			<p>Tel:123456789</p>
+			
+
+		</div>
+
+	</footer>
+  
+  
+  <script src="js/socios.js"></script>
+</body>
+</html>
